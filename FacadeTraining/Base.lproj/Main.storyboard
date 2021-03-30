@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FacadeTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATg-0m-m0i" userLabel="CheckTax Container View">
+                                <rect key="frame" x="0.0" y="492" width="414" height="370"/>
+                                <connections>
+                                    <segue destination="4Ug-0x-pR2" kind="embed" id="7rS-6e-Xvt"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sFj-jj-IRE" userLabel="CreateOrder Container View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="448"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="448" id="auz-fO-GmK"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="fv0-gB-u9P" kind="embed" id="9Uz-gb-X8Y"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ATg-0m-m0i" firstAttribute="top" secondItem="sFj-jj-IRE" secondAttribute="bottom" id="AwQ-sL-c0Y"/>
+                            <constraint firstItem="ATg-0m-m0i" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Cc3-Ea-npD"/>
+                            <constraint firstItem="sFj-jj-IRE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ICl-Cm-dkg"/>
+                            <constraint firstItem="ATg-0m-m0i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Obw-7x-T4Z"/>
+                            <constraint firstItem="ATg-0m-m0i" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bvi-zf-hQK"/>
+                            <constraint firstItem="sFj-jj-IRE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tYZ-Gz-G9P"/>
+                            <constraint firstItem="sFj-jj-IRE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xdl-e8-4kB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="90"/>
+        </scene>
+        <!--Create Order View Controller-->
+        <scene sceneID="dUp-DR-KkK">
+            <objects>
+                <viewController id="fv0-gB-u9P" customClass="CreateOrderViewController" customModule="FacadeTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I4D-Ss-q7o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTy-RX-hTU">
+                                <rect key="frame" x="190" y="74" width="34" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thf-GC-K0N">
+                                <rect key="frame" x="132" y="361" width="138" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FOb-JD-hIb">
+                                <rect key="frame" x="139" y="109.5" width="136" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fv0-gB-u9P" id="qvf-7l-Igc"/>
+                                </connections>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VY1-I8-NZv">
+                                <rect key="frame" x="0.0" y="167" width="414" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="fv0-gB-u9P" id="iIr-Oc-bEY"/>
+                                    <outlet property="delegate" destination="fv0-gB-u9P" id="hhp-Im-WLb"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="thf-GC-K0N" firstAttribute="leading" secondItem="I4D-Ss-q7o" secondAttribute="leading" constant="132" id="Bqd-47-ueO"/>
+                            <constraint firstAttribute="trailing" secondItem="FOb-JD-hIb" secondAttribute="trailing" constant="139" id="TzQ-RU-hBE"/>
+                            <constraint firstAttribute="trailing" secondItem="thf-GC-K0N" secondAttribute="trailing" constant="144" id="ViY-Bm-CRc"/>
+                            <constraint firstItem="VY1-I8-NZv" firstAttribute="top" secondItem="FOb-JD-hIb" secondAttribute="bottom" constant="23.5" id="bh3-tc-RbA"/>
+                            <constraint firstItem="thf-GC-K0N" firstAttribute="top" secondItem="VY1-I8-NZv" secondAttribute="bottom" constant="32" id="cv4-W2-oNj"/>
+                            <constraint firstItem="yTy-RX-hTU" firstAttribute="centerX" secondItem="I4D-Ss-q7o" secondAttribute="centerX" id="fVw-u5-JX0"/>
+                            <constraint firstItem="FOb-JD-hIb" firstAttribute="leading" secondItem="I4D-Ss-q7o" secondAttribute="leading" constant="139" id="fd6-Ob-Rhg"/>
+                            <constraint firstAttribute="trailing" secondItem="VY1-I8-NZv" secondAttribute="trailing" id="hxe-7H-aii"/>
+                            <constraint firstItem="yTy-RX-hTU" firstAttribute="top" secondItem="I4D-Ss-q7o" secondAttribute="topMargin" constant="30" id="jG2-1z-wi5"/>
+                            <constraint firstItem="FOb-JD-hIb" firstAttribute="top" secondItem="yTy-RX-hTU" secondAttribute="bottom" constant="15" id="lG0-em-wp9"/>
+                            <constraint firstItem="VY1-I8-NZv" firstAttribute="leading" secondItem="I4D-Ss-q7o" secondAttribute="leading" id="ofK-KD-m0M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="statePickerView" destination="VY1-I8-NZv" id="Nok-6c-aC0"/>
+                        <outlet property="subtotalAmountTextField" destination="FOb-JD-hIb" id="Ppu-is-zO8"/>
+                        <outlet property="totalAmountLabel" destination="thf-GC-K0N" id="IHG-MS-GGb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PHN-aZ-GWi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="-181.47321428571428"/>
+        </scene>
+        <!--Check Tax View Controller-->
+        <scene sceneID="U5v-A5-26h">
+            <objects>
+                <viewController id="4Ug-0x-pR2" customClass="CheckTaxViewController" customModule="FacadeTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aH8-Am-lzA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="370"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXd-lQ-TAD">
+                                <rect key="frame" x="178" y="74" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdi-Zm-Dhs">
+                                <rect key="frame" x="0.0" y="152" width="414" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="4Ug-0x-pR2" id="sIi-sc-Zge"/>
+                                    <outlet property="delegate" destination="4Ug-0x-pR2" id="ncU-iS-Hr6"/>
+                                </connections>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SnP-JD-emO">
+                                <rect key="frame" x="119" y="110" width="176" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="4Ug-0x-pR2" id="Nrl-eT-LbJ"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SR-mM-IQc">
+                                <rect key="frame" x="138" y="317" width="138" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="kdi-Zm-Dhs" firstAttribute="top" secondItem="SnP-JD-emO" secondAttribute="bottom" constant="8" id="03B-VU-jd1"/>
+                            <constraint firstItem="1SR-mM-IQc" firstAttribute="top" secondItem="kdi-Zm-Dhs" secondAttribute="bottom" constant="3" id="0eC-Ur-18l"/>
+                            <constraint firstAttribute="trailing" secondItem="1SR-mM-IQc" secondAttribute="trailing" constant="138" id="51Q-7U-mMt"/>
+                            <constraint firstItem="SnP-JD-emO" firstAttribute="top" secondItem="pXd-lQ-TAD" secondAttribute="bottom" constant="15" id="NvY-oa-Rqc"/>
+                            <constraint firstItem="pXd-lQ-TAD" firstAttribute="top" secondItem="aH8-Am-lzA" secondAttribute="topMargin" constant="30" id="PrT-7m-ucs"/>
+                            <constraint firstAttribute="trailing" secondItem="SnP-JD-emO" secondAttribute="trailing" constant="119" id="S0e-hy-Pkr"/>
+                            <constraint firstAttribute="trailing" secondItem="kdi-Zm-Dhs" secondAttribute="trailing" id="SzL-B7-UDq"/>
+                            <constraint firstItem="SnP-JD-emO" firstAttribute="leading" secondItem="aH8-Am-lzA" secondAttribute="leading" constant="119" id="emd-xb-IBK"/>
+                            <constraint firstItem="kdi-Zm-Dhs" firstAttribute="leading" secondItem="aH8-Am-lzA" secondAttribute="leading" id="erU-nL-PwT"/>
+                            <constraint firstItem="pXd-lQ-TAD" firstAttribute="centerX" secondItem="aH8-Am-lzA" secondAttribute="centerX" id="fJf-w1-rlU"/>
+                            <constraint firstItem="1SR-mM-IQc" firstAttribute="leading" secondItem="aH8-Am-lzA" secondAttribute="leading" constant="138" id="vc0-tm-QHi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="statePickerView" destination="kdi-Zm-Dhs" id="PcV-db-e2Y"/>
+                        <outlet property="subtotalAmountTextField" destination="SnP-JD-emO" id="7M9-2J-xKk"/>
+                        <outlet property="taxAmountLabel" destination="1SR-mM-IQc" id="2Ba-mc-Bxl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMc-6Q-iSI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="313"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
